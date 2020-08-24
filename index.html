@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="STYLESHEET" type="text/css" href="style.css"></link>
+<title>Content Editable</title>
+
+
+
+</head>
+<body>
+
+
+<div>
+    <div style="float: left; width: 280px; height: 54px; margin-left: 10px; margin-right: 10px; background-color: whitesmoke;">
+
+        <input id="formulario" id="formulario" style="background-color: #ffffff; margin-top: 10px; margin-left: 10px; margin-right: 10px; width: -webkit-fill-available;"> </input>
+        <button id="button" style="margin-top: 2px; margin-left: 10px; ">Buscar</button>
+
+        <button id="SortDatebutton" style="margin-top: 2px; margin-left: 10px; ">order by date</button>
+
+    </div>
+
+    <div>
+        <p class="p1">
+            <button onclick="init('bold')">Negrita</button>
+            <button onclick="init('italic')">Itálica</button>
+            <button onclick="init('underline')">Subrayado</button>
+            <button onclick="init('justifycenter')">Centrado</button>
+            <button onclick="init('increasefontsize')">Fuente +</button>
+            <button onclick="init('inserthorizontalrule')">Línea Hr.</button>
+            <button onclick="init('redo')">Rehacer</button>
+            <button onclick="init('undo')">Deshacer</button>
+            <button onclick="init('s')">Vista Real</button>
+            <button onclick="init('h')">Vista HTML</button>
+            </p>
+    </div>
+            
+</div>
+
+
+
+<div>
+    <div style="float: left; width: 300px; height: 400px; background-color: rgb(224 223 223);" >
+        <div style="background-color: white; margin-left: 10px; margin-right: 10px; width: 280px; height: 400px;     border-style: solid;
+        border-width: thin;" >
+
+        <ul id="result" style="list-style: none;">
+            
+            <li></li>
+        </ul>
+
+        </div>
+
+        <button id="ListFilesButton" style="margin-top: 3px; margin-left: 10px;"> Documents </button>
+        <button id="PaperButton" style="margin-top: 3px; margin-left: 10px;"> Papelera de reciclaje </button>
+    </div>
+
+    <div id="txtDiv" style="float: left;">
+        <div id="txtbox" contenteditable="true">
+        <h2>Título</h2>
+        <p>Escribe aquí ...</p>
+        <p>Etc ...</p>
+        </div>
+        <textarea id="text" name="text"></textarea>
+
+        <div style="margin-top: 5px;">
+            <input id="InputNewName"> </input>
+            <button id="SaveFileB">Guardar archivo</button>
+
+            <button id="EraseFileB">Borrar archivo</button>
+
+            <button id="RecoverFileB">Recuperar archivo</button>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="codeEditor.js"> </script>
+
+</body>
+</html>

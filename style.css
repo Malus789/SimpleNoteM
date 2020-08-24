@@ -1,0 +1,27 @@
+
+#txtbox, #text {
+    width:800px;
+    height:400px;
+    padding:10px;
+    overflow:scroll;
+    background:#ffffff;
+    border:0px none;
+
+    border-style: solid;
+    border-width: thin;
+    }
+    #text {
+    display:none;
+    }
+    button, input, select {
+    background:#EFEFEF;
+    border:#000000 none solid;
+
+    }
+
+.p1 {
+    height:auto;
+    padding:10px;
+    background:white;
+    float: inherit;
+    }
